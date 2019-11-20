@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //MARK: Properties
+    //Outlets
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var outputReselt: UILabel!
+    
+    //MARK: Function (make things happen)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    //analyze the text
+    @IBAction func analyzeText(_ sender: Any) {
+    }
+    
 }
 
