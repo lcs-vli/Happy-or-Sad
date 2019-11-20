@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     //analyze the text
     @IBAction func analyzeText(_ sender: Any) {
+        
+        //guard against input
+        guard let phraseInput = inputField.text, phraseInput.isEmpty else {
+            outputReselt.text = "Please enter a value please"
+            return
+        }
     }
     
 }
