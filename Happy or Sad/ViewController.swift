@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     //Outlets
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var outputReselt: UILabel!
-    var phraseInput = ""
     
     //MARK: Function (make things happen)
     
@@ -42,17 +41,17 @@ class ViewController: UIViewController {
         }
         
         //give output
-        analyze()
+        analyze(text: phraseInput)
     }
     
-    func analyze()  {
+    func analyze(text: String)  {
         
         //set happy and sad values
         var happyValue = 0
         var sadValue = 0
         
         //determine the number of sad and happy emoji
-        for character in phraseInput {
+        for character in text {
             
             switch character{
             case "😀","😄","☺️","🙂":
