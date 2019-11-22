@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     //Outlets
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var outputReselt: UILabel!
+    var phraseInput = ""
     
     //MARK: Function (make things happen)
     
@@ -39,7 +40,45 @@ class ViewController: UIViewController {
             outputReselt.text = "Please enter a phare with 255 character or less"
             return
         }
+        
+        //give output
+        analyze()
     }
+    
+    func analyze()  {
+        
+        //set happy and sad values
+        var happyValue = 0
+        var sadValue = 0
+        
+        //determine the number of sad and happy emoji
+        for character in phraseInput {
+            
+            switch character{
+            case "😀","😄","☺️","🙂":
+                 happyValue += 1
+            case "😔","😕","🙁","☹️":
+                sadValue += 1
+            default:
+                happyValue += 0
+            }
+            
+        }
+        
+        //compare the number of sad and happy emoji
+        if happyValue > sadValue{
+            outputReselt.text = "Happy"
+        }else if happyValue < sadValue{
+            outputReselt.text = "Sad"
+        }else if happyValue == sadValue && happyValue != 0 && sadValue != 0{
+            outputReselt.text = "unsure"
+        }else if happyValue == 0 && sadValue == 0{
+            outputReselt.text = "none"
+        }
+        
+    }
+        
+        
     
 }
 

@@ -24,6 +24,7 @@
 		547A93C22382FC11002EFF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		547A93C52382FC11002EFF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		547A93C72382FC11002EFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F2BA0F2385A8B400E60D16 /* Testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Testing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				547A93C22382FC11002EFF53 /* Assets.xcassets */,
 				547A93C42382FC11002EFF53 /* LaunchScreen.storyboard */,
 				547A93C72382FC11002EFF53 /* Info.plist */,
+				54F2BA0F2385A8B400E60D16 /* Testing.playground */,
 			);
 			path = "Happy or Sad";
 			sourceTree = "<group>";
